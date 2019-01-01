@@ -1,0 +1,9 @@
+extends ../layouts/main.pug 
+block style 
+  link(type='text/css' rel='stylesheet' href='css/home.css')
+block content
+  section(class='container-fluid bg-dark', id='jumbo-section')
+    div(class='text-center')
+      h1(class='display-4 text-light') Hello there!
+      p(class='text-light') Search our database for movies and tv shows to get detailed information and excellent reviews.
+      a(class='btn btn-danger px-4', href='/movies', role='button') View Movies
