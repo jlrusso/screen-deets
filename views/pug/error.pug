@@ -1,0 +1,8 @@
+extends ../layouts/main.pug
+block style
+  link(type='text/css' rel='stylesheet' href='css/error.css')
+block content
+  div(id='dne-wrap')
+    h1(class='text-light display-5 text-center') Page does not exist
+    div(class='text-center')
+      a(class='btn btn-danger px-4' href='/home') Go to Home
