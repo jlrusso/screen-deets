@@ -1,0 +1,13 @@
+#content-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 350px;
+  max-width: 90%;
+  height: auto;
+  margin: auto;
+}
+.fa-burn {
+  font-size: 1.6rem;
+}
