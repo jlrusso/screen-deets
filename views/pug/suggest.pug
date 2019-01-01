@@ -1,0 +1,21 @@
+extends ../layouts/main.pug 
+block style 
+  link(type='text/css' rel='stylesheet' href='css/suggest.css')
+block content
+  form(action='/add-content' method='POST' id='content-form')
+    p(class='text-center')
+      i(class='fas fa-burn text-danger')
+    h3(class='text-center text-light') Suggest Content
+    div(class='form-group')
+      label(for='product-input' class='text-light') Type:
+      select(name='content-type' class='form-control' required)
+        option(value='movie') Movie
+        option(value='show') Show
+        option(value='documentary') Documentary
+    div(class='form-group')
+      label(for='content-name' class='text-light') Name:
+      input(type='text' class='form-control' name='content-name' placeholder='e.g. Happy Gilmore' id='content-name' required)
+    div(class='form-group')
+      label(for='content-date' class='text-light') Year:
+      input(type='number' class='form-control' name='content-date' placeholder='e.g. 1996' id='content-date' required)
+    input(type='submit' class='btn btn-primary d-block w-100 mt-4' value='Submit')
