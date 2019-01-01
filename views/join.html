@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/join.css">
+  <title>ScreenDeets | Join</title>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand text-danger font-weight-bold" href="/home">ScreenDeets</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+        <ul class="navbar-nav mr-4">
+          <li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/movies" class="nav-link">Movies</a></li>
+          <li class="nav-item"><a href="/shows" class="nav-link">Shows</a></li>
+          <li class="nav-item"><a href="/suggest" class="nav-link">Suggest</a></li>
+          <li class="nav-item"><a href="/login"  class="nav-link">Log in</a></li>
+          <li class="nav-item"><a href="/join" class="nav-link active">Join</a></li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-danger" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main id="join-wrap" class="bg-dark">
+    <form action="/create-user" method="POST" id="join-form">
+      <p class="text-center"><i class="fas fa-burn text-danger"></i></p>
+      <h3 class="text-center text-light">New User</h3>
+      <label for="username-input" class="text-light">Username:</label>
+      <input type="text" name="username" placeholder="jDoe23!" class="form-control mb-2" id="username-input" autocomplete="oasdfff" required/>
+      <label for="email-input" class="text-light">Email:</label>
+      <input type="text" name="email" placeholder="example@mail.com" class="form-control mb-2" id="email-input" autocomplete="offasdf" required/>
+      <label for="password-input" class="text-light">Password:</label>
+      <input type="password" name="password" placeholder="Type password.." class="form-control mb-2" id="password-input" autocomplete="offasdf" required/>
+      <input type="submit" class="btn btn-primary d-block w-100 mt-4" value="Join"/>
+    </form>
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
