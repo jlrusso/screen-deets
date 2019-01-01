@@ -1,0 +1,16 @@
+extends ../layouts/main.pug 
+block style
+  link(type='text/css' rel='stylesheet' href='css/join.css')
+block content 
+  main(id='join-wrap' class='bg-dark')
+    form(action='/create-user' method='POST' id='join-form')
+      p(class='text-center')
+        i(class='fas fa-burn text-danger')
+      h3(class='text-center text-light') New User
+      label(for='username-input' class='text-light') Username: 
+      input(type='text' name='username' placeholder='jDoe23!' class='form-control mb-2' id='username-input' autocomplete='off' required)
+      label(for='email-input' class='text-light') Email:
+      input(type='text' name='email' placeholder='example@mail.com' class='form-control mb-2' id='email-input' autocomplete='off' required)
+      label(for='password-input' class='text-light') Password:
+      input(type='password' name='password' placeholder='Type password..' class='form-control mb-2' id='password-input' autocomplete='off' required)
+      input(type='submit' class='btn btn-primary d-block w-100 mt-4' value='Join')
