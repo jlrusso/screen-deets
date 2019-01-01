@@ -1,0 +1,38 @@
+extends ../layouts/main.pug 
+block style 
+  link(type='text/css' rel='stylesheet', href='css/movies.css')
+block content 
+  section(id='movies-wrap', class='pt-4')
+    div(class='grid-wrap mx-auto')
+      each movie in movies
+        div(class='grid-item')
+          div(class='card rounded bg-transparent', style='width: 18rem;')
+            div(class='img-div rounded-top')
+            div(class='card-body')
+              h5(class='card-title text-center text-light') #{movie.title}
+              a(href='/', class='btn btn-danger d-block w-100') Get Details
+
+  nav(class='my-5')
+    ul(class='pagination justify-content-center pagination-lg')
+      li(class='page-item disabled')
+        a(class='page-link bg-dark text-danger' href='#' aria-label='Previous')
+          span(aria-hidden='true') &laquo;
+      li(class='page-item active')
+        a(class='page-link' href='/movies/p1') 1
+      li(class='page-item')
+        a(class='page-link bg-dark text-danger' href='/movies/p2') 2
+      li(class='page-item')
+        a(class='page-link bg-dark text-danger' href='/movies/p3') 3
+      li(class='page-item')
+        a(class='page-link bg-dark text-danger' href='/movies/p4') 4
+      li(class='page-item')
+        a(class='page-link bg-dark text-danger' href='/movies/p5') 5
+      li(class='page-item')
+        a(class='page-link bg-dark text-danger' href='/movies/p6') 6
+      li(class='page-item')
+        a(class='page-link bg-dark text-danger' href='/movies/p7') 7
+      li(class='page-item')
+        a(class='page-link bg-dark text-danger' href='/movies/p8') 8
+      li(class='page-item')
+        a(class='page-link bg-dark text-danger' href='/movies/p9' aria-label='Next')
+          span(aria-hidden='true') &raquo;
