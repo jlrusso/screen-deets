@@ -1,0 +1,11 @@
+extends ../../layouts/main.pug 
+block style
+  link(type='text/css' rel='stylesheet' href='/css/docum-details.css')
+block content
+  section(id='docum-deets-wrap' class='container-fluid')
+    aside(class='docum-side-deets')
+      img(class='docum-img my-3 rounded d-block' title=`${docum.title}` src=`${docum.image}` alt=`${docum.title}`)
+      p(class='docum-title text-light text-center') #{docum.title}
+      p(class='docum-summary text-light px-5 text-center') #{docum.desc}
+    main(class='docum-main-deets')
+      div(class='main-wrap')
