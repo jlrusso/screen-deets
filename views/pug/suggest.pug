@@ -2,20 +2,26 @@ extends ../layouts/main.pug
 block style 
   link(type='text/css' rel='stylesheet' href='css/suggest.css')
 block content
-  form(action='/add-content' method='POST' id='content-form')
+  form(action='/suggest/add-content' method='POST' id='content-form')
     p(class='text-center')
       i(class='fas fa-burn text-danger')
     h3(class='text-center text-light') Suggest Content
     div(class='form-group')
       label(for='product-input' class='text-light') Type:
-      select(name='content-type' class='form-control' required)
+      select(name='type' class='form-control' required)
         option(value='movie') Movie
         option(value='show') Show
         option(value='documentary') Documentary
     div(class='form-group')
       label(for='content-name' class='text-light') Name:
-      input(type='text' class='form-control' name='content-name' placeholder='e.g. Happy Gilmore' id='content-name' required)
+      input(type='text' class='form-control' name='title' placeholder='e.g. Happy Gilmore' id='content-name' required)
     div(class='form-group')
       label(for='content-date' class='text-light') Year:
-      input(type='number' class='form-control' name='content-date' placeholder='e.g. 1996' id='content-date' required)
+      input(type='number' class='form-control' name='date' placeholder='e.g. 1996' id='content-date' required)
+    div(class='form-group')
+      label(for='content-image' class='text-light') Image URL:
+      input(type='text' placeholder='http://www.google.com/images/etc.' name='image' class='form-control' id='content-image' required)
+    div(class='form-group')
+      label(for='content-desc' class='text-light') Description:
+      textarea(class='form-control' id='content-desc' name='desc' placeholder='Description' required)
     input(type='submit' class='btn btn-primary d-block w-100 mt-4' value='Submit')
