@@ -1,0 +1,11 @@
+extends ../../layouts/main.pug 
+block style
+  link(type='text/css' rel='stylesheet' href='/css/movie-details.css')
+block content
+  section(id='movie-deets-wrap' class='container-fluid')
+    aside(class='movie-side-deets')
+      img(class='movie-img my-3 rounded d-block' title=`${movie.title}` src=`${movie.image}` alt=`${movie.title}`)
+      p(class='movie-title text-light text-center') #{movie.title}
+      p(class='movie-summary text-light px-5 text-center') #{movie.desc}
+    main(class='movie-main-deets')
+      div(class='main-wrap')
