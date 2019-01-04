@@ -1,0 +1,11 @@
+extends ../../layouts/main.pug 
+block style
+  link(type='text/css' rel='stylesheet' href='/css/show-details.css')
+block content
+  section(id='show-deets-wrap' class='container-fluid')
+    aside(class='show-side-deets')
+      img(class='show-img my-3 rounded d-block' title=`${show.title}` src=`${show.image}` alt=`${show.title}`)
+      p(class='show-title text-light text-center') #{show.title}
+      p(class='show-summary text-light px-5 text-center') #{show.desc}
+    main(class='show-main-deets')
+      div(class='main-wrap')
