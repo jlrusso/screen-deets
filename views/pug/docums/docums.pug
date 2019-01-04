@@ -1,0 +1,50 @@
+extends ../../layouts/main.pug 
+block style 
+  link(type='text/css' rel='stylesheet', href='/css/docums.css')
+block content 
+  section(id='docums-wrap', class='py-4')
+    if docums.length > 0
+      div(class='grid-wrap mx-auto')
+        each docum in docums
+          div(class='grid-item')
+            div(class='card rounded bg-transparent' style=`background: url(${docum.image})` title=(docum.title))
+              div(class='card-btn-wrap')
+                a(href=`/documentaries/docum-details/${docum.id}` class='btn btn-danger d-block w-100') Get Details 
+    else 
+      h3(class='display-4 text-center text-light') No documentaries
+      div(class='text-center')
+        a(class='btn btn-danger px-4' href='/suggest') Suggest a documentary
+
+    if docums.length > 0
+      nav(class='my-5')
+        ul(class='pagination justify-content-center pagination-lg')
+          li(class=(docums.length <= 16 ? 'page-item disabled' : 'page-item'))
+            a(class='page-link bg-dark text-danger' href='#' aria-label='Previous')
+              span(aria-hidden='true') &laquo;
+          li(class='page-item active')
+            a(class='page-link' href='/docs/p1') 1
+          if docums.length > 16
+            li(class='page-item')
+              a(class='page-link bg-dark text-danger' href='/docs/p2') 2
+          if docums.length > 32
+            li(class='page-item')
+              a(class='page-link bg-dark text-danger' href='/docs/p3') 3
+          if docums.length > 48
+            li(class='page-item')
+              a(class='page-link bg-dark text-danger' href='/docs/p4') 4
+          if docums.length > 64
+            li(class='page-item')
+              a(class='page-link bg-dark text-danger' href='/docs/p5') 5
+          if docums.length > 80
+            li(class='page-item')
+              a(class='page-link bg-dark text-danger' href='/docs/p6') 6
+          if docums.length > 96
+            li(class='page-item')
+              a(class='page-link bg-dark text-danger' href='/docs/p7') 7
+          if docums.length > 112
+            li(class='page-item')
+              a(class='page-link bg-dark text-danger' href='/docs/p8') 8
+          if docums.length > 0
+            li(class=(docums.length <= 16 ? 'page-item disabled' : 'page-item'))
+              a(class='page-link bg-dark text-danger' href='/docs/p9' aria-label='Next')
+                span(aria-hidden='true') &raquo;
