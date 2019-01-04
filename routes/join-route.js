@@ -1,13 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const path = require("path");
+const errorCtrl = require('../controllers/error-ctrl');
 
 router.get("/", (req, res) => {
-  // res.sendFile(path.join(__dirname, '../views', 'join.html'));
-  res.render('join', {pageTitle: 'ScreenDeets | Join', path: '/join'});
+  res.render('join', {
+    pageTitle: 'ScreenDeets | Join', 
+    path: '/join'
+  });
 });
 
-router.get("/create-user", (req, res) => {
+router.post("/create-user", (req, res) => {
   let body = [];
   req.on("data", chunk => {
     body.push(chunk);
@@ -31,5 +33,7 @@ router.get("/create-user", (req, res) => {
     });
   });
 });
+
+router.use(errorCtrl.goToError);
 
 module.exports = router;
