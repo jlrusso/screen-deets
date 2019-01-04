@@ -1,20 +1,32 @@
-.img-div {
-  width: 100%;
-  height: 220px;
-}
 .grid-wrap {
   width: 80%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
 }
 .card {
   width: 100% !important;
-  background: black !important;
+  height: 280px;
 }
 .card:hover {
   box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+.grid-item .card {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  overflow: hidden;
+}
+.card-btn-wrap {
+  position: absolute;
+  width: 100%;
+  bottom: -60px;
+  padding: 0.5rem;
+  transition: 0.4s;
+}
+.grid-item .card:hover .card-btn-wrap {
+  bottom: 0;
 }
 .page-link {
   border-color: black !important;
