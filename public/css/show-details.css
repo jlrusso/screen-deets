@@ -1,0 +1,30 @@
+.show-main-deets {
+  position: absolute;
+  right: 0;
+  top: 65px;
+  width: calc(100vw - 400px);
+  height: auto;
+  min-height: calc(100vh - 75px);
+  border: 1px solid red;
+}
+.main-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  height: 600px;
+  border: 1px solid red;
+}
+.show-side-deets {
+  position: absolute;
+  left: 0;
+  top: 65px;
+  width: 400px;
+  height: calc(100vh - 75px);
+}
+.show-img {
+  width: 50%;
+  margin: auto;
+  height: auto;
+}
