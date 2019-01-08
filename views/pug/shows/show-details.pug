@@ -7,5 +7,38 @@ block content
       img(class='show-img my-3 rounded d-block' title=`${show.title}` src=`${show.image}` alt=`${show.title}`)
       p(class='show-title text-light text-center') #{show.title}
       p(class='show-summary text-light px-5 text-center') #{show.desc}
+
     main(class='show-main-deets')
-      div(class='main-wrap')
+      h3(class='text-light main-heading mb-4') Description
+      div(class='show-desc text-light mb-5') Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+
+      h3(class='text-light main-heading mb-4') Quotes
+      div(class='show-quotes-wrap mb-5')
+        p(class='show-quote text-light') 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem sint, perspiciatis totam officia consectetur.'
+          i &nbsp; - Said Character
+        p(class='show-quote text-light') 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem sint, perspiciatis totam officia consectetur.'
+          i &nbsp; - Said Character
+        p(class='show-quote text-light') 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem sint, perspiciatis totam officia consectetur.'
+          i &nbsp; - Said Character
+        p(class='show-quote text-light') 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem sint, perspiciatis totam officia consectetur.'
+          i &nbsp; - Said Character
+        p(class='show-quote text-light') 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem sint, perspiciatis totam officia consectetur.'
+          i &nbsp; - Said Character
+
+      h3(class='text-light main-heading mb-4') Reviews
+      div(id="show-reviews" class="text-light mb-5")
+        div(class='review-wrap mb-4')
+          p(class='review-author-wrap')
+            span(class='author-img')
+            span(class='author-name') John Doe
+          p(class='review') Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur, libero dolore natus assumenda eveniet id commodi ratione sit aliquams.
+        div(class='review-wrap mb-4')
+          p(class='review-author-wrap')
+            span(class='author-img')
+            span(class='author-name') John Doe
+          p(class='review') Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur, libero dolore natus assumenda eveniet id commodi ratione sit aliquams.
+        div(class='review-wrap mb-4')
+          p(class='review-author-wrap')
+            span(class='author-img')
+            span(class='author-name') John Doe
+          p(class='review') Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur, libero dolore natus assumenda eveniet id commodi ratione sit aliquams.
