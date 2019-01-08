@@ -7,9 +7,10 @@ block content
       div(class='grid-wrap mx-auto')
         each docum in docums
           div(class='grid-item')
-            div(class='card rounded bg-transparent' style=`background: url(${docum.image})` title=(docum.title))
-              div(class='card-btn-wrap')
-                a(href=`/documentaries/docum-details/${docum.id}` class='btn btn-danger d-block w-100') Get Details 
+            a(href=`/documentaries/docum-details/${docum.id}`)
+              div(class='card rounded bg-transparent' style=`background: url(${docum.image})` title=(docum.title))
+                div(class='card-btn-wrap')
+                  button(class='btn btn-danger d-block w-100') Get Details 
     else 
       h3(class='display-4 text-center text-light') No documentaries
       div(class='text-center')
