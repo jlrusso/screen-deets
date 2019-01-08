@@ -5,7 +5,6 @@
   width: calc(100vw - 400px);
   height: auto;
   min-height: calc(100vh - 75px);
-  border: 1px solid red;
 }
 .main-wrap {
   position: absolute;
@@ -14,10 +13,9 @@
   transform: translate(-50%,-50%);
   width: 90%;
   height: 600px;
-  border: 1px solid red;
 }
 .docum-side-deets {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 65px;
   width: 400px;
@@ -27,4 +25,39 @@
   width: 50%;
   margin: auto;
   height: auto;
+}
+.main-heading {
+  width: 95%;
+  margin: auto;
+  text-decoration: underline;
+  text-decoration-color: var(--main-red-color);
+}
+.docum-desc,
+.docum-quotes-wrap {
+  width: 95%;
+  margin: auto;
+}
+.review-wrap {
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+.review-author-wrap {
+  display: grid;
+  grid-template-columns: 45px 150px;
+  grid-column-gap: 10px;
+}
+.author-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url('../images/user-icon.png');
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.author-name {
+  line-height: 40px;
 }
