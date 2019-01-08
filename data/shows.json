@@ -12,5 +12,75 @@
     "image": "http://www.gstatic.com/tv/thumb/tvbanners/9258480/p9258480_b_v8_aa.jpg",
     "desc": "This US adaptation, set at a paper company in Scranton, Pa., has a similar documentary style to that of the Ricky Gervais-led British original.",
     "id": "2"
+  },
+  {
+    "title": "Better Call Saul",
+    "date": "2015",
+    "image": "http://www.gstatic.com/tv/thumb/tvbanners/15677306/p15677306_b_v8_ab.jpg",
+    "desc": "He wasn't always Saul Goodman, ace attorney for chemist-turned-meth dealer Walter White. Six years before he begins to represent Albuquerque's most notorious criminal, Goodman is Jimmy McGill, a small-time attorney hustling to make a name for himself.",
+    "id": "iub5cjsjqk1w4dl"
+  },
+  {
+    "title": "Breaking Bad",
+    "date": "2008",
+    "image": "http://www.gstatic.com/tv/thumb/tvbanners/9181462/p9181462_b_v8_aa.jpg",
+    "desc": "Mild-mannered high school chemistry teacher Walter White thinks his life can't get much worse. His salary barely makes ends meet, a situation not likely to improve once his pregnant wife gives birth, and their teenage son is battling cerebral palsy.",
+    "id": "iub5ankjqk1y0pl"
+  },
+  {
+    "title": "The Walking Dead",
+    "date": "2010",
+    "image": "http://www.gstatic.com/tv/thumb/tvbanners/15844533/p15844533_b_v8_ab.jpg",
+    "desc": "Based on the comic book series written by Robert Kirkman, this gritty drama portrays life in the months and years that follow a zombie apocalypse.",
+    "id": "iub5d7kjqk1yz5h"
+  },
+  {
+    "title": "Mad Men",
+    "date": "2007",
+    "image": "http://www.gstatic.com/tv/thumb/tvbanners/10426355/p10426355_b_v8_aa.jpg",
+    "desc": "In 1960s New York, alpha male Don Draper struggles to stay on top of the heap in the high-pressure world of Madison Avenue advertising firms. ",
+    "id": "iub5d9kjqk206xh"
+  },
+  {
+    "title": "Halt and Catch Fire",
+    "date": "2014",
+    "image": "http://www.gstatic.com/tv/thumb/tvbanners/14304630/p14304630_b_v8_aa.jpg",
+    "desc": "It's the early 1980s, and the spirit of innovation in personal computing is about to catch fire. Hot on the trail is a renegade trio -- a visionary, an engineer and a prodigy -- who risk everything to realize their vision of building a computer that can change the future.",
+    "id": "iub5d2wjqk21i1d"
+  },
+  {
+    "title": "Stranger Things",
+    "date": "2016",
+    "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_.jpg",
+    "desc": "It's the fall of 1984, about a year after Will Byers was found, and he has been plagued by seeing visions of the Upside Down featuring a more dangerous monster.",
+    "id": "iub58aojqk22np6"
+  },
+  {
+    "title": "Mr. Robot",
+    "date": "2015",
+    "image": "http://www.gstatic.com/tv/thumb/tvbanners/14461667/p14461667_b_v8_aa.jpg",
+    "desc": "Young, anti-social computer programmer Elliot works as a cybersecurity engineer during the day, but at night he is a vigilante hacker. He is recruited by the mysterious leader of an underground group of hackers to join their organization.",
+    "id": "iub5780jqk23ngk"
+  },
+  {
+    "title": "House of Cards",
+    "date": "2013",
+    "image": "http://www.gstatic.com/tv/thumb/tvbanners/15818372/p15818372_b_v8_aa.jpg",
+    "desc": "U.S. Rep. Francis Underwood of South Carolina starts out as a ruthless politician seeking revenge in this Netflix original production. Promised the post of Secretary of State in exchange for his support, his efforts help to ensure the election of Garrett Walker to the presidency.",
+    "id": "iub5dawjqk24w8l"
+  },
+  {
+    "title": "Black Mirror",
+    "date": "2011",
+    "image": "http://www.gstatic.com/tv/thumb/tvbanners/12986402/p12986402_b_v8_aa.jpg",
+    "desc": "Featuring stand-alone dramas -- sharp, suspenseful, satirical tales that explore techno-paranoia -- \"Black Mirror\" is a contemporary reworking of \"The Twilight Zone\" with stories that tap into the collective unease about the modern world.",
+    "id": "iub59y0jqk25vk0"
+  },
+  {
+    "title": "Peaky Blinders",
+    "date": "2013",
+    "image": "http://www.gstatic.com/tv/thumb/tvbanners/10182741/p10182741_b_v8_aa.jpg",
+    "desc": "Britain is a mixture of despair and hedonism in 1919 in the aftermath of the Great War. Returning soldiers, newly minted revolutions and criminal gangs are fighting for survival in a nation rocked by economic upheaval. ",
+    "id": "iub57g4jqk26xte"
   }
 ]
