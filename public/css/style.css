@@ -1,3 +1,6 @@
+:root {
+  --main-red-color: #dc3545 !important;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -15,7 +18,7 @@ li {
 header {
   width: 100%;
   height: auto;
-  position: relative;
+  position: fixed;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background: #fff;
@@ -53,5 +56,5 @@ header {
   transition: 0.4s;
 }
 #close-search-btn:hover {
-  color: #dc3545 !important;
+  color: var(--main-red-color);
 }
